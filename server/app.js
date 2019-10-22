@@ -1,10 +1,10 @@
-// import files and packages up here
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+    res.status(200).send('hello world');
+});
 
 
-// create your express server below
-var app;
-
-// add your routes and middleware below
-
-// finally export the express application
 module.exports = app;
